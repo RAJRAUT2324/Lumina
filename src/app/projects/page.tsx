@@ -150,7 +150,7 @@ export default function ProjectsPage() {
       <div className="mt-32 glass-panel p-16 rounded-[4rem] text-center max-w-4xl w-full border border-primary/20 shadow-[0_0_50px_rgba(0,229,255,0.05)]">
          <h2 className="text-4xl font-heading font-bold mb-6">Have a specific project in mind?</h2>
          <p className="text-gray-400 mb-10 text-lg">We specialize in turning complex ideas into scalable, high-impact digital products.</p>
-         <Link href="/contact" className="glass-card px-12 py-5 rounded-full font-bold bg-white text-black hover:bg-primary hover:text-black transition-all shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-primary/50">
+         <Link href="https://docs.google.com/forms/d/e/1FAIpQLScBjVX_I5VgqLG_OKiB2sCqGpxIL8TIAtYz0G1-zZ7pWyAbEg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" className="glass-card px-12 py-5 rounded-full font-bold bg-white text-black hover:bg-primary hover:text-black transition-all shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-primary/50">
             Let's Initialize Your Vision
          </Link>
       </div>

@@ -1,22 +1,23 @@
+'use client'
+
 import { Mail, MessageCircle, MapPin, Send, Rocket, ClipboardList } from "lucide-react"
 
-export default function ContactPage() {
+export default function ContactSection() {
   return (
-    <main className="min-h-screen pt-32 pb-24 px-6 relative z-10 flex flex-col items-center">
-      <div className="max-w-3xl text-center mb-16">
-        <h1 className="text-5xl md:text-7xl font-heading font-extrabold mb-6 glow-text text-white">Initialize Comms</h1>
+    <section id="contact" className="w-full py-32 relative z-10 flex flex-col items-center">
+       <div className="max-w-3xl text-center mb-12 md:mb-16 px-6">
+        <h2 className="text-4xl md:text-7xl font-heading font-extrabold mb-4 md:mb-6 glow-text text-black dark:text-white">Initialize Comms</h2>
         <p className="text-xl text-gray-400">Whether you need an entire AI ecosystem or a slick new Next.js interface, we're ready.</p>
       </div>
 
-      <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 relative">
+      <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 relative px-6">
         {/* Contact Info Col */}
-         <div className="space-y-8 md:space-y-12">
-            <div className="glass-panel p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border border-primary/20 bg-black/40 relative overflow-hidden h-full flex flex-col justify-center">
+        <div className="space-y-8 md:space-y-12">
+           <div className="glass-panel p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border border-primary/20 bg-black/40 relative overflow-hidden h-full flex flex-col justify-center">
              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full"></div>
              
              <h3 className="text-3xl font-heading font-bold mb-10 relative z-10">Direct Lines</h3>
-             
-              <div className="space-y-8 relative z-10">
+                          <div className="space-y-8 relative z-10">
                 {/* Team Direct Lines */}
                 <div className="space-y-6">
                   <p className="text-sm uppercase tracking-widest text-primary font-extrabold mb-4">Direct Team Access</p>
@@ -70,7 +71,7 @@ export default function ContactPage() {
              </div>
            </div>
         </div>
-      </div>
+        </div>
 
         {/* Action Cards Col */}
         <div className="space-y-8">
@@ -119,6 +120,6 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   )
 }

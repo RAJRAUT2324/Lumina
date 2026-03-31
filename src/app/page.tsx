@@ -2,6 +2,7 @@ import Hero from "@/components/Hero"
 import ServiceCard from "@/components/ServiceCard"
 import { Bot, Code, Paintbrush, Zap, Target, Clock, Rocket, ShieldCheck } from "lucide-react"
 import Link from 'next/link'
+import ContactSection from "@/components/ContactSection"
 
 export default function Home() {
   return (
@@ -9,8 +10,8 @@ export default function Home() {
       <Hero />
 
       {/* Services Overview */}
-      <section id="services" className="w-full max-w-7xl mx-auto px-6 py-32 relative z-10">
-        <div className="text-center mb-16">
+      <section id="services" className="w-full max-w-7xl mx-auto px-6 py-20 md:py-32 relative z-10">
+        <div className="text-center mb-12 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 glow-text">Core Capabilities</h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">Engineering solutions that bridge business and technology with unmatched polish.</p>
         </div>
@@ -44,8 +45,8 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="w-full border-y border-white/5 bg-white/[0.02] py-24 relative z-10 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <section className="w-full border-y border-white/5 bg-white/[0.02] py-16 md:py-24 relative z-10 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           <div className="glass-panel p-8 rounded-3xl text-center">
             <Zap className="mx-auto mb-4 text-primary" size={40} />
             <h4 className="font-bold text-xl mb-2">Fast Delivery</h4>
@@ -70,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Portfolio & Packages Preview */}
-      <section id="work" className="w-full max-w-7xl mx-auto px-6 py-32 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <section id="work" className="w-full max-w-7xl mx-auto px-6 py-20 md:py-32 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
         <div>
           <h2 className="text-4xl font-heading font-bold mb-8">Selected Work</h2>
           <div className="space-y-6">
@@ -128,16 +129,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="w-full py-32 relative z-10">
-        <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-5xl md:text-7xl font-heading font-extrabold mb-8">Let's Grow Your Business</h2>
-          <p className="text-xl text-gray-400 mb-12">Step into the next generation of the web with TalentRix AI and design. Powered by Collective intelligence.</p>
-          <Link href="/contact" className="glass-card text-2xl px-12 py-5 rounded-full font-bold hover:bg-white/10 transition-all border border-primary/50 shadow-[0_0_30px_rgba(0,229,255,0.4)] hover:shadow-[0_0_50px_rgba(0,229,255,0.8)] glow-text inline-block">
-            Initialize Now
-          </Link>
-        </div>
-      </section>
+      {/* Contact Section */}
+      <ContactSection />
     </main>
   )
 }

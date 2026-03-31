@@ -139,7 +139,7 @@ export default function AboutPage() {
         <section className="text-center max-w-4xl mx-auto">
           <Target size={48} className="mx-auto text-purple-400 mb-6" />
           <h2 className="text-4xl font-heading font-bold mb-6">Our Mission</h2>
-          <p className="text-2xl text-gray-800 dark:text-gray-300 font-medium leading-normal italic glass-panel p-12 rounded-[3rem] border-black/5 dark:border-white/5 relative bg-white/50 dark:bg-transparent">
+          <p className="text-xl md:text-2xl text-gray-800 dark:text-gray-300 font-medium leading-normal italic glass-panel p-8 md:p-12 rounded-[2.5rem] md:rounded-[3rem] border-black/5 dark:border-white/5 relative bg-white/50 dark:bg-transparent">
             "To democratize high-end tech. We inject AI automation into legacy workflows and bring premium 3D design to businesses of all scales, turning average digital footprints into commanding industry presences."
           </p>
         </section>
@@ -150,18 +150,18 @@ export default function AboutPage() {
             <Settings size={40} className="mx-auto text-gray-600 dark:text-gray-400 mb-4" />
             <h2 className="text-4xl font-heading font-bold">How We Work</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="glass-card p-10 rounded-3xl relative">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="glass-card p-6 md:p-10 rounded-3xl relative">
               <span className="text-5xl font-black text-black/5 dark:text-white/5 absolute -top-4 -right-2">01</span>
               <h4 className="text-xl font-bold mb-4 text-gradient-cyan glow-text">Discovery & Strategy</h4>
               <p className="text-gray-700 dark:text-gray-400 leading-relaxed relative z-10">We audit your current tech stack and deeply analyze your bottlenecks, mapping out where AI and modern web frameworks can deliver maximum ROI.</p>
             </div>
-            <div className="glass-card p-10 rounded-3xl relative">
+            <div className="glass-card p-6 md:p-10 rounded-3xl relative">
               <span className="text-5xl font-black text-black/5 dark:text-white/5 absolute -top-4 -right-2">02</span>
               <h4 className="text-xl font-bold mb-4 text-purple-500 dark:text-purple-400 dark:text-shadow-[0_0_15px_rgba(168,85,247,0.5)]">Architecture & Design</h4>
               <p className="text-gray-700 dark:text-gray-400 leading-relaxed relative z-10">Our designers craft the "Collective" aesthetic while engineers lay the robust, scalable backend infrastructure to support complex AI workflows.</p>
             </div>
-            <div className="glass-card p-10 rounded-3xl relative">
+            <div className="glass-card p-6 md:p-10 rounded-3xl relative">
               <span className="text-5xl font-black text-black/5 dark:text-white/5 absolute -top-4 -right-2">03</span>
               <h4 className="text-xl font-bold mb-4 text-blue-500 dark:text-blue-400">Development & Launch</h4>
               <p className="text-gray-700 dark:text-gray-400 leading-relaxed relative z-10">Rapid agile development phase culminating in rigorous testing. We don't just hand over code; we ensure a seamless integration into your business reality.</p>

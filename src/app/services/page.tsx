@@ -4,9 +4,9 @@ import ServiceCard from "@/components/ServiceCard"
 export default function ServicesPage() {
   return (
     <main className="min-h-screen pt-32 pb-24 px-6 relative z-10 flex flex-col items-center">
-      <div className="max-w-4xl text-center mb-20">
-        <h1 className="text-5xl md:text-7xl font-heading font-extrabold mb-6 glow-text text-gradient-cyan">Our Services</h1>
-        <p className="text-xl text-gray-400">Transforming visions into high-performance digital reality.</p>
+      <div className="max-w-4xl text-center mb-12 md:mb-20 px-6">
+        <h1 className="text-4xl md:text-7xl font-heading font-extrabold mb-4 md:mb-6 glow-text text-gradient-cyan">Our Services</h1>
+        <p className="text-lg md:text-xl text-gray-400">Transforming visions into high-performance digital reality.</p>
       </div>
 
       <div className="w-full max-w-7xl mx-auto space-y-32">
@@ -35,7 +35,7 @@ export default function ServicesPage() {
               </li>
             </ul>
           </div>
-          <div className="h-96 rounded-[3rem] glass-card border border-primary/20 bg-black flex items-center justify-center overflow-hidden">
+          <div className="h-64 md:h-96 rounded-[2.5rem] md:rounded-[3rem] glass-card border border-primary/20 bg-black flex items-center justify-center overflow-hidden">
              {/* Placeholder for 3D Asset or Graphic */}
              <div className="w-64 h-64 border border-primary/40 rounded-full animate-spin [animation-duration:10s] flex items-center justify-center relative">
                <div className="w-32 h-32 bg-primary/20 blur-[30px] rounded-full absolute"></div>
@@ -45,8 +45,8 @@ export default function ServicesPage() {
         </section>
 
         {/* Web Development */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="order-last lg:order-first h-96 rounded-[3rem] glass-card border border-purple-500/20 bg-black flex items-center justify-center overflow-hidden">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
+          <div className="order-last lg:order-first h-64 md:h-96 rounded-[2.5rem] md:rounded-[3rem] glass-card border border-purple-500/20 bg-black flex items-center justify-center overflow-hidden">
              <div className="w-64 h-64 border border-purple-500/40 rounded-full animate-spin [animation-duration:15s] flex items-center justify-center relative direction-reverse">
                <div className="w-32 h-32 bg-purple-500/20 blur-[30px] rounded-full absolute"></div>
                <Code size={64} className="text-purple-400/70 animate-pulse relative z-10" />
@@ -102,7 +102,7 @@ export default function ServicesPage() {
               </li>
             </ul>
           </div>
-          <div className="h-96 rounded-[3rem] glass-card border border-red-500/20 bg-black flex items-center justify-center overflow-hidden">
+          <div className="h-64 md:h-96 rounded-[2.5rem] md:rounded-[3rem] glass-card border border-red-500/20 bg-black flex items-center justify-center overflow-hidden">
              <div className="w-64 h-64 border border-red-500/40 rounded-full animate-spin [animation-duration:12s] flex items-center justify-center relative">
                <div className="w-32 h-32 bg-red-500/20 blur-[30px] rounded-full absolute"></div>
                <Paintbrush size={64} className="text-red-400/70 animate-pulse relative z-10" />
@@ -112,8 +112,13 @@ export default function ServicesPage() {
 
       </div>
 
-      <div className="mt-32 max-w-2xl text-center">
-        <a href="/contact" className="glass-panel text-lg px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-all border border-primary/50 text-white inline-flex items-center gap-4 hover:shadow-[0_0_30px_rgba(0,229,255,0.4)]">
+      <div className="mt-20 md:mt-32 max-w-2xl text-center">
+        <a 
+          href="https://docs.google.com/forms/d/e/1FAIpQLScBjVX_I5VgqLG_OKiB2sCqGpxIL8TIAtYz0G1-zZ7pWyAbEg/viewform?usp=publish-editor" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="glass-panel text-lg px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-all border border-primary/50 text-white inline-flex items-center gap-4 hover:shadow-[0_0_30px_rgba(0,229,255,0.4)]"
+        >
           Start Your Project <ArrowRight size={20} />
         </a>
       </div>

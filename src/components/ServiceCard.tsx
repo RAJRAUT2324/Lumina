@@ -32,7 +32,7 @@ export default function ServiceCard({ title, description, icon, delay = 0 }: Ser
         glarePosition="all"
         tiltMaxAngleX={8}
         tiltMaxAngleY={8}
-        className="glass-card p-8 rounded-[2rem] h-full flex flex-col justify-start relative overflow-hidden group"
+        className="glass-card p-6 md:p-8 rounded-3xl md:rounded-[2rem] h-full flex flex-col justify-start relative overflow-hidden group"
       >
         <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-[50px] -mr-10 -mt-10 transition-all duration-500 group-hover:bg-primary/40 group-hover:scale-150"></div>
         <div className="w-14 h-14 rounded-2xl glass-panel flex items-center justify-center mb-6 text-primary z-10 border-primary/20">
