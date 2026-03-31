@@ -110,7 +110,7 @@ export default function ContactSection() {
               Tell us how we can improve your Lumina Flux experience.
             </p>
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeSnBQiaZtCvIhp9b3Jd9jlNTzmnf5jnOO9gq22_Ov_yL--fQ/viewform?usp=dialog" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeaiXKrE04caKUM7y5-w98Pwxu4Bg2lv7jRH9hGRELspO5PRw/viewform?usp=publish-editor" 
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-4 rounded-2xl font-bold bg-transparent border border-white/10 text-white hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3 text-lg"
