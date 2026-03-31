@@ -13,6 +13,9 @@ const syne = Syne({ subsets: ['latin'], variable: '--font-syne' })
 export const metadata: Metadata = {
   title: 'TalentRix | Collective AI & Development',
   description: 'Premium software development and AI automation agency. Transforming digital presence with high-impact collective intelligence.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
