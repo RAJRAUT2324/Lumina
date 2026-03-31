@@ -11,8 +11,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const syne = Syne({ subsets: ['latin'], variable: '--font-syne' })
 
 export const metadata: Metadata = {
-  title: 'Lumina Flux | Antigravity AI & Development',
-  description: 'Premium software development and AI automation agency. Transforming digital presence with smooth 3D experiences.',
+  title: 'TalentRix | Collective AI & Development',
+  description: 'Premium software development and AI automation agency. Transforming digital presence with high-impact collective intelligence.',
 }
 
 export default function RootLayout({

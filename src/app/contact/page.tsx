@@ -27,13 +27,13 @@ export default function ContactPage() {
                    </div>
                 </a>
 
-                <a href="mailto:hello@luminaflux.com" className="flex items-center gap-6 group">
+                <a href="mailto:hello@talentrix.com" className="flex items-center gap-6 group">
                    <div className="w-16 h-16 rounded-full glass-card flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors shadow-[0_0_20px_rgba(0,229,255,0.1)]">
                      <Mail size={28} />
                    </div>
                    <div>
                      <p className="text-sm uppercase tracking-widest text-gray-500 font-bold mb-1">Email</p>
-                     <p className="text-xl font-medium text-gray-200 group-hover:text-primary transition-colors">hello@luminaflux.com</p>
+                     <p className="text-xl font-medium text-gray-200 group-hover:text-primary transition-colors">hello@talentrix.com</p>
                    </div>
                 </a>
 

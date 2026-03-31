@@ -49,7 +49,7 @@ export default function Home() {
           <div className="glass-panel p-8 rounded-3xl text-center">
             <Zap className="mx-auto mb-4 text-primary" size={40} />
             <h4 className="font-bold text-xl mb-2">Fast Delivery</h4>
-            <p className="text-sm text-gray-400">Rapid shipping without sacrificing the premium antigravity feel.</p>
+            <p className="text-sm text-gray-400">Rapid shipping without sacrificing the premium Collective feel.</p>
           </div>
           <div className="glass-panel p-8 rounded-3xl text-center">
             <Target className="mx-auto mb-4 text-purple-400" size={40} />
@@ -74,22 +74,22 @@ export default function Home() {
         <div>
           <h2 className="text-4xl font-heading font-bold mb-8">Selected Work</h2>
           <div className="space-y-6">
-            <div className="glass-card rounded-[2rem] h-64 overflow-hidden relative group cursor-pointer border border-white/5">
-              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-transparent z-10"></div>
+            <a href="https://gearguide3.netlify.app/" target="_blank" rel="noopener noreferrer" className="glass-card rounded-[2rem] h-64 overflow-hidden relative group cursor-pointer border border-white/5 hover:border-primary/40 transition-all">
+              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-transparent z-10"></div>
               <div className="absolute bottom-6 left-6 z-20">
-                <h3 className="text-2xl font-bold">Sentinel AI</h3>
-                <p className="text-gray-300 text-sm">Predictive Maintenance Dashboard</p>
+                <h3 className="text-2xl font-bold font-heading glow-text">Gear Guide</h3>
+                <p className="text-gray-300 text-sm">Industrial AI selection engine.</p>
               </div>
-              <div className="w-full h-full bg-[#0a0a0a] group-hover:scale-105 transition-transform duration-700"></div>
-            </div>
-            <div className="glass-card rounded-[2rem] h-64 overflow-hidden relative group cursor-pointer border border-white/5">
-              <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-transparent z-10"></div>
+              <img src="/gearguide1.png" alt="Gear Guide" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-60" />
+            </a>
+            <a href="https://urbanpluse.netlify.app/" target="_blank" rel="noopener noreferrer" className="glass-card rounded-[2rem] h-64 overflow-hidden relative group cursor-pointer border border-white/5 hover:border-purple-500/40 transition-all">
+              <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-transparent z-10"></div>
               <div className="absolute bottom-6 left-6 z-20">
-                <h3 className="text-2xl font-bold">E-Commerce Flow</h3>
-                <p className="text-gray-300 text-sm">High-Conversion Storefront</p>
+                <h3 className="text-2xl font-bold font-heading glow-text">Urban Pulse</h3>
+                <p className="text-gray-300 text-sm">Smart city monitoring dashboard.</p>
               </div>
-              <div className="w-full h-full bg-[#0a0a0a] group-hover:scale-105 transition-transform duration-700"></div>
-            </div>
+              <img src="/up1.png" alt="Urban Pulse" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-60" />
+            </a>
           </div>
           <div className="mt-8">
             <Link href="/projects" className="text-primary hover:text-white transition-colors border-b border-primary/30 pb-1 font-medium">Explore All Case Studies →</Link>
@@ -132,7 +132,7 @@ export default function Home() {
       <section className="w-full py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h2 className="text-5xl md:text-7xl font-heading font-extrabold mb-8">Let's Grow Your Business</h2>
-          <p className="text-xl text-gray-400 mb-12">Step into the next generation of the web with Antigravity AI and design.</p>
+          <p className="text-xl text-gray-400 mb-12">Step into the next generation of the web with TalentRix AI and design. Powered by Collective intelligence.</p>
           <Link href="/contact" className="glass-card text-2xl px-12 py-5 rounded-full font-bold hover:bg-white/10 transition-all border border-primary/50 shadow-[0_0_30px_rgba(0,229,255,0.4)] hover:shadow-[0_0_50px_rgba(0,229,255,0.8)] glow-text inline-block">
             Initialize Now
           </Link>

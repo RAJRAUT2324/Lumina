@@ -34,7 +34,7 @@ export default function Hero() {
       >
         <div className="overflow-hidden mb-4">
           <motion.h1 variants={childVars} className="font-heading font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tight pb-2 text-gradient-cyan glow-text">
-            Antigravity
+            Collective
           </motion.h1>
         </div>
         <div className="overflow-hidden mb-6">
@@ -63,16 +63,22 @@ export default function Hero() {
           </Link>
         </motion.div>
 
-        {/* Live Count Bar */}
+        {/* KPI Cards Section */}
         <motion.div 
           variants={childVars}
-          className="mt-20 flex flex-wrap justify-center gap-8 md:gap-16 text-sm font-semibold tracking-widest uppercase text-gray-500 glass-card px-8 py-4 rounded-3xl"
+          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full max-w-5xl"
         >
-          <span><strong className="text-white text-base">50+</strong> Projects Delivered</span>
-          <span className="hidden md:inline-block w-1 h-1 bg-gray-600 rounded-full my-auto"></span>
-          <span><strong className="text-white text-base">4+</strong> Expert Developers</span>
-          <span className="hidden md:inline-block w-1 h-1 bg-gray-600 rounded-full my-auto"></span>
-          <span><strong className="text-white text-base">24/7</strong> AI Support</span>
+          {[
+            { val: "10+", label: "Projects Delivered" },
+            { val: "20+", label: "Happy Clients" },
+            { val: "1+", label: "Years Experience" },
+            { val: "24/7", label: "Support" }
+          ].map((item, i) => (
+            <div key={i} className="glass-card p-8 md:p-10 rounded-[2.5rem] flex flex-col items-center justify-center text-center border-white/5 hover:border-primary/40 transition-all hover:-translate-y-2 duration-500 group">
+              <span className="text-4xl md:text-6xl font-heading font-black mb-1 text-white group-hover:text-primary transition-colors duration-500 glow-text">{item.val}</span>
+              <span className="text-[10px] md:text-xs uppercase tracking-[0.3em] font-bold text-gray-500 group-hover:text-gray-300 transition-colors">{item.label}</span>
+            </div>
+          ))}
         </motion.div>
       </motion.div>
     </section>

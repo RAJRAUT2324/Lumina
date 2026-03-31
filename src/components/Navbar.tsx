@@ -13,8 +13,8 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between"
     >
       <div className="glass-panel px-6 py-3 rounded-2xl flex items-center justify-between w-full max-w-7xl mx-auto">
-        <Link href="/" className="font-heading font-bold text-2xl tracking-tighter glow-text dark:text-white text-black">
-          LUMINA
+        <Link href="/" className="font-heading font-extrabold text-2xl tracking-tighter glow-text dark:text-white text-black">
+          TALENTRIX
         </Link>
         <div className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide dark:text-white text-black">
           <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
