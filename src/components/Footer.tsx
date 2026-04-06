@@ -12,7 +12,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="w-full py-12 px-6 relative z-10 border-t border-white/10 bg-black/40 backdrop-blur-md flex flex-col items-center gap-8">
+    <footer className="w-full py-12 px-6 relative z-10 border-t border-black/10 dark:border-white/10 bg-white/5 dark:bg-black/40 backdrop-blur-md flex flex-col items-center gap-8">
       <div className="flex items-center gap-6">
         {socials.map((social, i) => (
           <a

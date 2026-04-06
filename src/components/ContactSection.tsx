@@ -13,7 +13,7 @@ export default function ContactSection() {
       <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 relative px-6">
         {/* Contact Info Col */}
         <div className="space-y-8 md:space-y-12">
-           <div className="glass-panel p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border border-primary/20 bg-black/40 relative overflow-hidden h-full flex flex-col justify-center">
+           <div className="glass-panel p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border border-primary/20 bg-white/5 dark:bg-black/40 relative overflow-hidden h-full flex flex-col justify-center">
              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full"></div>
              
              <h3 className="text-3xl font-heading font-bold mb-10 relative z-10">Direct Lines</h3>
@@ -31,13 +31,13 @@ export default function ContactSection() {
                       <div key={i} className="flex items-center justify-between group/item">
                         <div>
                           <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-1 group-hover/item:text-primary transition-colors">{member.name}</p>
-                          <a href={`tel:+91${member.num}`} className="text-xl font-semibold text-white hover:text-primary transition-all tracking-wider">+91 {member.num}</a>
+                          <a href={`tel:+91${member.num}`} className="text-xl font-semibold text-black dark:text-white hover:text-primary transition-all tracking-wider">+91 {member.num}</a>
                         </div>
                         <a 
                           href={`https://wa.me/91${member.num}`} 
                           target="_blank" 
                           rel="noopener noreferrer" 
-                          className="w-12 h-12 rounded-2xl glass-card flex items-center justify-center text-green-400 hover:bg-green-500/20 transition-all shadow-[0_0_20px_rgba(34,197,94,0.15)] ring-1 ring-white/5 hover:ring-green-400/30"
+                          className="w-12 h-12 rounded-2xl glass-card flex items-center justify-center text-green-400 hover:bg-green-500/20 transition-all shadow-[0_0_20px_rgba(34,197,94,0.15)] ring-1 ring-black/5 dark:ring-white/5 hover:ring-green-400/30"
                         >
                           <MessageCircle size={22} />
                         </a>
@@ -47,7 +47,7 @@ export default function ContactSection() {
                 </div>
 
                 {/* Email and Location below */}
-                <div className="pt-6 border-t border-white/5 space-y-8">
+                <div className="pt-6 border-t border-black/5 dark:border-white/5 space-y-8">
 
                 <a href="mailto:talentrix369@gmail.com" className="flex items-center gap-6 group">
                    <div className="w-16 h-16 rounded-full glass-card flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors shadow-[0_0_20px_rgba(0,229,255,0.1)]">
@@ -55,7 +55,7 @@ export default function ContactSection() {
                    </div>
                    <div>
                      <p className="text-sm uppercase tracking-widest text-gray-500 font-bold mb-1">Email</p>
-                     <p className="text-xl font-medium text-gray-200 group-hover:text-primary transition-colors">talentrix369@gmail.com</p>
+                     <p className="text-xl font-medium text-gray-700 dark:text-gray-200 group-hover:text-primary transition-colors">talentrix369@gmail.com</p>
                    </div>
                 </a>
 
@@ -65,7 +65,7 @@ export default function ContactSection() {
                    </div>
                    <div>
                      <p className="text-sm uppercase tracking-widest text-gray-500 font-bold mb-1">Location</p>
-                     <p className="text-xl font-medium text-gray-200">Global & Remote Native</p>
+                     <p className="text-xl font-medium text-gray-700 dark:text-gray-200">Global & Remote Native</p>
                    </div>
                 </div>
              </div>
@@ -76,14 +76,14 @@ export default function ContactSection() {
         {/* Action Cards Col */}
         <div className="space-y-8">
           {/* Start Project Card */}
-          <div className="glass-card p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border border-white/10 hover:border-primary/30 transition-all group">
+          <div className="glass-card p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border border-black/10 dark:border-white/10 hover:border-primary/30 transition-all group">
             <div className="flex items-center gap-4 mb-4 md:mb-6">
               <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-all">
                 <Rocket size={24} />
               </div>
-              <h3 className="text-3xl font-heading font-bold">Start Project</h3>
+              <h3 className="text-3xl font-heading font-bold text-black dark:text-white">Start Project</h3>
             </div>
-            <p className="text-gray-400 text-lg mb-8 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 text-lg mb-8 leading-relaxed">
               Ready to kickstart your next big idea?<br />
               Let's collaborate to build something amazing together.
             </p>
@@ -91,21 +91,21 @@ export default function ContactSection() {
               href="https://docs.google.com/forms/d/e/1FAIpQLScBjVX_I5VgqLG_OKiB2sCqGpxIL8TIAtYz0G1-zZ7pWyAbEg/viewform?usp=publish-editor" 
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-4 rounded-2xl font-bold bg-white text-black hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-3 text-lg"
+              className="w-full py-4 rounded-2xl font-bold bg-black dark:bg-white text-white dark:text-black hover:bg-primary transition-all flex items-center justify-center gap-3 text-lg"
             >
               Get Started <Send size={20} />
             </a>
           </div>
 
           {/* Feedback Card */}
-          <div className="glass-card p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border border-white/10 hover:border-purple-500/30 transition-all group">
+          <div className="glass-card p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border border-black/10 dark:border-white/10 hover:border-purple-500/30 transition-all group">
             <div className="flex items-center gap-4 mb-4 md:mb-6">
               <div className="w-12 h-12 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-400 group-hover:bg-purple-500/20 transition-all">
                 <ClipboardList size={24} />
               </div>
-              <h3 className="text-3xl font-heading font-bold">Feedback Form</h3>
+              <h3 className="text-3xl font-heading font-bold text-black dark:text-white">Feedback Form</h3>
             </div>
-            <p className="text-gray-400 text-lg mb-8 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 text-lg mb-8 leading-relaxed">
               Your insights drive our innovation.<br />
               Tell us how we can improve your Lumina Flux experience.
             </p>
@@ -113,7 +113,7 @@ export default function ContactSection() {
               href="https://docs.google.com/forms/d/e/1FAIpQLSeaiXKrE04caKUM7y5-w98Pwxu4Bg2lv7jRH9hGRELspO5PRw/viewform?usp=publish-editor" 
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-4 rounded-2xl font-bold bg-transparent border border-white/10 text-white hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3 text-lg"
+              className="w-full py-4 rounded-2xl font-bold bg-transparent border border-black/10 dark:border-white/10 text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-all flex items-center justify-center gap-3 text-lg"
             >
               Give Feedback <MessageCircle size={20} />
             </a>

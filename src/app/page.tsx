@@ -3,131 +3,82 @@ import ServiceCard from "@/components/ServiceCard"
 import { Bot, Code, Paintbrush, Zap, Target, Clock, Rocket, ShieldCheck } from "lucide-react"
 import Link from 'next/link'
 import ContactSection from "@/components/ContactSection"
+import Marquee from "@/components/Marquee"
+import Testimonials from "@/components/Testimonials"
+import VerticalFlow from "@/components/VerticalFlow"
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <Hero />
+      
+      <Marquee />
 
       {/* Services Overview */}
-      <section id="services" className="w-full max-w-7xl mx-auto px-6 py-20 md:py-32 relative z-10">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 glow-text">Core Capabilities</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">Engineering solutions that bridge business and technology with unmatched polish.</p>
+      <section id="services" className="w-full max-w-7xl mx-auto px-6 py-24 md:py-32 relative z-10">
+        <div className="text-center mb-16 md:mb-20">
+          <h2 className="text-5xl md:text-7xl font-heading font-black mb-6 tracking-tight">Core <br className="md:hidden" /> <span className="text-gradient-cyan glow-text">Capabilities.</span></h2>
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl">Engineering world-class solutions that bridge the gap between high-level business strategy and cutting-edge technology.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <ServiceCard 
             title="AI Automation" 
-            description="We build intelligent chatbots, workflow automations, and CRM integrations that operate 24/7. Turn your WhatsApp or Instagram into an Always-On sales engine."
+            description="Intelligent chatbots, autonomous workflows, and neural CRM integrations. We make your business run 24/7."
             icon={<Bot size={32} />}
             delay={0.1}
           />
           <ServiceCard 
-            title="Web Development" 
-            description="From high-converting landing pages to complex custom web applications. We utilize Next.js and robust architectures for max performance."
+            title="Web Engineering" 
+            description="Ultra-fast Next.js applications with 3D interactivity. We build the infrastructure for the next billion users."
             icon={<Code size={32} />}
             delay={0.2}
           />
           <ServiceCard 
-            title="Design & Content" 
-            description="Frictionless UX/UI, 3D interactive assets, branding, and video editing. We make your digital presence visually magnetic."
+            title="Brand Design" 
+            description="Visually magnetic identities and frictionless UI/UX. We craft the aesthetic standard of the industry."
             icon={<Paintbrush size={32} />}
             delay={0.3}
           />
         </div>
         
-        <div className="text-center mt-12">
-          <Link href="/services" className="inline-block text-primary hover:text-white font-semibold transition-colors border-b border-primary/30 hover:border-white pb-1">
-            View All Services →
+        <div className="text-center mt-16 md:mt-24">
+          <Link href="/services" className="inline-flex items-center gap-2 text-primary hover:text-white font-black text-xl transition-all group">
+            Explore Ecosystem 
+            <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="w-full border-y border-white/5 bg-white/[0.02] py-16 md:py-24 relative z-10 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          <div className="glass-panel p-8 rounded-3xl text-center">
-            <Zap className="mx-auto mb-4 text-primary" size={40} />
-            <h4 className="font-bold text-xl mb-2">Fast Delivery</h4>
-            <p className="text-sm text-gray-400">Rapid shipping without sacrificing the premium Collective feel.</p>
+      <section className="w-full border-y border-white/5 bg-white/[0.01] py-24 md:py-32 relative z-10 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+          <div className="glass-panel p-10 rounded-[3rem] text-center border-white/5 hover:border-primary/20 transition-all">
+            <Zap className="mx-auto mb-6 text-primary" size={48} />
+            <h4 className="font-heading font-black text-2xl mb-3">Hyper Speed</h4>
+            <p className="text-gray-400 leading-relaxed text-sm">Rapid deployment workflows without compromising on premium quality.</p>
           </div>
-          <div className="glass-panel p-8 rounded-3xl text-center">
-            <Target className="mx-auto mb-4 text-purple-400" size={40} />
-            <h4 className="font-bold text-xl mb-2">Result Driven</h4>
-            <p className="text-sm text-gray-400">Everything is engineered for conversions and measurable ROI.</p>
+          <div className="glass-panel p-10 rounded-[3rem] text-center border-white/5 hover:border-purple-400/20 transition-all">
+            <Target className="mx-auto mb-6 text-purple-400" size={48} />
+            <h4 className="font-heading font-black text-2xl mb-3">ROI Driven</h4>
+            <p className="text-gray-400 leading-relaxed text-sm">Every line of code is engineered to maximize conversion and business scale.</p>
           </div>
-          <div className="glass-panel p-8 rounded-3xl text-center">
-            <Rocket className="mx-auto mb-4 text-blue-400" size={40} />
-            <h4 className="font-bold text-xl mb-2">Affordable Scale</h4>
-            <p className="text-sm text-gray-400">Enterprise-grade technology adapted for modern growing businesses.</p>
+          <div className="glass-panel p-10 rounded-[3rem] text-center border-white/5 hover:border-blue-400/20 transition-all">
+            <Rocket className="mx-auto mb-6 text-blue-400" size={48} />
+            <h4 className="font-heading font-black text-2xl mb-3">Future Proof</h4>
+            <p className="text-gray-400 leading-relaxed text-sm">Enterprise-grade architectures ready for the AI-first digital landscape.</p>
           </div>
-          <div className="glass-panel p-8 rounded-3xl text-center border-primary/20 bg-primary/5">
-            <ShieldCheck className="mx-auto mb-4 text-green-400" size={40} />
-            <h4 className="font-bold text-xl mb-2">Student Focus</h4>
-            <p className="text-sm text-gray-400">Dedicated pipelines for Hackathons and academic projects.</p>
+          <div className="glass-panel p-10 rounded-[3rem] text-center border-primary/20 bg-primary/5">
+            <ShieldCheck className="mx-auto mb-6 text-green-400" size={48} />
+            <h4 className="font-heading font-black text-2xl mb-3">Total Security</h4>
+            <p className="text-gray-400 leading-relaxed text-sm">Encrypted pipelines and secure data handling for peace of mind.</p>
           </div>
         </div>
       </section>
 
-      {/* Portfolio & Packages Preview */}
-      <section id="work" className="w-full max-w-7xl mx-auto px-6 py-20 md:py-32 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
-        <div>
-          <h2 className="text-4xl font-heading font-bold mb-8">Selected Work</h2>
-          <div className="space-y-6">
-            <a href="https://gearguide3.netlify.app/" target="_blank" rel="noopener noreferrer" className="glass-card rounded-[2rem] h-64 overflow-hidden relative group cursor-pointer border border-white/5 hover:border-primary/40 transition-all">
-              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-transparent z-10"></div>
-              <div className="absolute bottom-6 left-6 z-20">
-                <h3 className="text-2xl font-bold font-heading glow-text">Gear Guide</h3>
-                <p className="text-gray-300 text-sm">Industrial AI selection engine.</p>
-              </div>
-              <img src="/gearguide1.png" alt="Gear Guide" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-60" />
-            </a>
-            <a href="https://urbanpluse.netlify.app/" target="_blank" rel="noopener noreferrer" className="glass-card rounded-[2rem] h-64 overflow-hidden relative group cursor-pointer border border-white/5 hover:border-purple-500/40 transition-all">
-              <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-transparent z-10"></div>
-              <div className="absolute bottom-6 left-6 z-20">
-                <h3 className="text-2xl font-bold font-heading glow-text">Urban Pulse</h3>
-                <p className="text-gray-300 text-sm">Smart city monitoring dashboard.</p>
-              </div>
-              <img src="/up1.png" alt="Urban Pulse" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-60" />
-            </a>
-          </div>
-          <div className="mt-8">
-            <Link href="/projects" className="text-primary hover:text-white transition-colors border-b border-primary/30 pb-1 font-medium">Explore All Case Studies →</Link>
-          </div>
-        </div>
+      <VerticalFlow />
 
-        <div>
-           <h2 className="text-4xl font-heading font-bold mb-8">Packages Preview</h2>
-           <div className="space-y-4">
-              <div className="glass-panel p-8 rounded-3xl border border-white/5 hover:border-primary/30 transition-colors">
-                <div className="flex justify-between items-center mb-2">
-                  <h3 className="text-xl font-bold">Starter</h3>
-                  <span className="text-xs font-bold uppercase tracking-wider text-gray-400 border border-gray-600 px-3 py-1 rounded-full">Website + Basic Bot</span>
-                </div>
-                <p className="text-sm text-gray-400 mb-4">Perfect for individuals and small setups.</p>
-              </div>
-              <div className="glass-panel p-8 rounded-3xl border border-primary/40 shadow-[0_0_20px_rgba(0,229,255,0.1)] relative overflow-hidden">
-                <div className="absolute right-0 top-0 w-32 h-32 bg-primary/20 blur-[50px]"></div>
-                <div className="flex justify-between items-center mb-2 relative z-10">
-                  <h3 className="text-xl font-bold text-gradient-cyan glow-text">Growth </h3>
-                  <span className="text-xs font-bold uppercase tracking-wider text-primary border border-primary bg-primary/10 px-3 py-1 rounded-full animate-pulse">Most Popular</span>
-                </div>
-                <p className="text-sm text-gray-300 mb-4 relative z-10">Website + Custom AI Chatbot + Lead Engine.</p>
-              </div>
-              <div className="glass-panel p-8 rounded-3xl border border-white/5 hover:border-purple-500/30 transition-colors">
-                <div className="flex justify-between items-center mb-2">
-                  <h3 className="text-xl font-bold text-gray-200">Scale</h3>
-                  <span className="text-xs font-bold uppercase tracking-wider text-purple-400 border border-purple-500/30 px-3 py-1 rounded-full">Enterprise</span>
-                </div>
-                <p className="text-sm text-gray-400 mb-4">Full Automation + CRM + Marketing Dashboard.</p>
-              </div>
-           </div>
-           <div className="mt-8">
-            <Link href="/pricing" className="text-purple-400 hover:text-white transition-colors border-b border-purple-400/30 pb-1 font-medium">View Detailed Pricing →</Link>
-          </div>
-        </div>
-      </section>
+      <Testimonials />
 
       {/* Contact Section */}
       <ContactSection />

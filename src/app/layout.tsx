@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Syne } from 'next/font/google'
+import { Plus_Jakarta_Sans, Outfit } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -8,8 +8,8 @@ import SceneWrapper from '@/components/SceneWrapper'
 import VoiceAgent from '@/components/VoiceAgent'
 import { ThemeProvider } from '@/components/ThemeProvider'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const syne = Syne({ subsets: ['latin'], variable: '--font-syne' })
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-plus-jakarta' })
+const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' })
 
 export const metadata: Metadata = {
   title: 'TalentRix | Collective AI & Development',
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${syne.variable} font-sans antialiased text-black dark:text-white bg-white dark:bg-background selection:bg-primary selection:text-black`}>
+      <body className={`${plusJakarta.variable} ${outfit.variable} font-sans antialiased text-black dark:text-white bg-white dark:bg-background selection:bg-primary selection:text-black`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <SmoothScrollWrapper>
             <SceneWrapper />

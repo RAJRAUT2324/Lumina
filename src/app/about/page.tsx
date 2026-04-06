@@ -56,7 +56,7 @@ export default function AboutPage() {
                 />
               </div>
               <h4 className="text-2xl font-bold text-black dark:text-white mb-1 relative z-10 text-center">Raj Raut</h4>
-              <p className="text-primary font-medium tracking-wide text-sm mb-4 relative z-10 text-center uppercase tracking-[0.1em]">Full Stack + Agentic AI Developer</p>
+              <p className="text-primary font-medium tracking-wide text-sm mb-4 relative z-10 text-center uppercase tracking-[0.1em]">Full Stack & Gen AI Engineer <pre>(System Architecture Design)</pre></p>
               <p className="text-gray-600 dark:text-gray-400 text-sm text-center leading-relaxed mb-6 flex-grow relative z-10">
                 Architecting the bridge between creative vision and scalable reality through elite full-stack engineering and intelligent agentic systems.
               </p>

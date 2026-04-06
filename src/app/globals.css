@@ -5,21 +5,21 @@
 :root {
   --background: 255, 255, 255;
   --foreground: 5, 5, 5;
-  --glass-bg: rgba(0, 0, 0, 0.03);
-  --glass-border: rgba(0, 0, 0, 0.08);
-  --glass-shadow: rgba(0, 0, 0, 0.02);
-  --glass-card: linear-gradient(145deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.01) 100%);
-  --glass-card-shadow: 0 30px 60px -10px rgba(0,0,0,0.1), inset 0 0 20px rgba(0, 0, 0, 0.02);
+  --primary: 0, 229, 255;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(0, 0, 0, 0.05);
+  --glass-shadow: rgba(0, 0, 0, 0.05);
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui;
+  --font-heading: var(--font-outfit), ui-sans-serif, system-ui;
 }
 
 .dark {
   --background: 5, 5, 5;
   --foreground: 255, 255, 255;
-  --glass-bg: rgba(255, 255, 255, 0.03);
+  --primary: 0, 229, 255;
+  --glass-bg: rgba(255, 255, 255, 0.02);
   --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-shadow: rgba(255, 255, 255, 0.02);
-  --glass-card: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
-  --glass-card-shadow: 0 30px 60px -10px rgba(0,0,0,0.5), inset 0 0 20px rgba(255, 255, 255, 0.02);
+  --glass-shadow: rgba(0, 0, 0, 0.3);
 }
 
 @layer base {
@@ -43,34 +43,54 @@
   }
 
   .glow-text {
-    text-shadow: 0 0 30px rgba(0, 229, 255, 0.6);
+    text-shadow: 0 0 25px rgba(var(--primary), 0.4);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #ffffff 0%, #a5a5a5 100%);
+    background: linear-gradient(135deg, rgb(var(--foreground)) 0%, rgba(var(--foreground), 0.7) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .text-gradient-cyan {
-    background: linear-gradient(135deg, #00e5ff 0%, #9d4edd 100%);
+    background: linear-gradient(135deg, #00e5ff 0%, #0099ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .glass-card {
-    background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 30px 60px -10px rgba(0,0,0,0.5), inset 0 0 20px rgba(255, 255, 255, 0.02);
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 25px 50px -12px var(--glass-shadow);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
   }
 
   .outer-glow:hover {
     box-shadow: 0 0 40px rgba(0, 229, 255, 0.15);
     border-color: rgba(0, 229, 255, 0.3);
+  }
+
+  /* Animations for Ticker and Vertical Flow */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  @keyframes vertical-scroll {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50%); }
+  }
+
+  .animate-vertical-scroll {
+    animation: vertical-scroll 40s linear infinite;
   }
 
   /* Smooth reveal animation utilities */
