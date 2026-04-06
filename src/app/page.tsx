@@ -11,7 +11,41 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <Hero />
-      
+
+      {/* Stats Section */}
+      <section className="w-full max-w-7xl mx-auto px-6 -mt-12 mb-12 relative z-20">
+        <div className="glass-panel py-10 px-6 md:px-12 rounded-[2.5rem] grid grid-cols-2 lg:grid-cols-4 gap-8 border-primary/20 shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+          <div className="flex flex-col items-center justify-center text-center group">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+              <Rocket size={24} />
+            </div>
+            <span className="text-4xl md:text-5xl font-black text-black dark:text-white mb-2">10<span className="text-primary">+</span></span>
+            <span className="text-xs uppercase tracking-widest text-gray-600 dark:text-gray-400 font-bold">Projects Done</span>
+          </div>
+          <div className="flex flex-col items-center justify-center text-center group">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+              <ShieldCheck size={24} />
+            </div>
+            <span className="text-4xl md:text-5xl font-black text-black dark:text-white mb-2">10<span className="text-primary">+</span></span>
+            <span className="text-xs uppercase tracking-widest text-gray-600 dark:text-gray-400 font-bold">Happy Customers</span>
+          </div>
+          <div className="flex flex-col items-center justify-center text-center group">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+              <Clock size={24} />
+            </div>
+            <span className="text-4xl md:text-5xl font-black text-black dark:text-white mb-2">24/7</span>
+            <span className="text-xs uppercase tracking-widest text-gray-600 dark:text-gray-400 font-bold">Priority Support</span>
+          </div>
+          <div className="flex flex-col items-center justify-center text-center group">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+              <Zap size={24} />
+            </div>
+            <span className="text-4xl md:text-5xl font-black text-black dark:text-white mb-2">10k<span className="text-primary">+</span></span>
+            <span className="text-xs uppercase tracking-widest text-gray-600 dark:text-gray-400 font-bold">Followers</span>
+          </div>
+        </div>
+      </section>
+
       <Marquee />
 
       {/* Services Overview */}
@@ -20,31 +54,31 @@ export default function Home() {
           <h2 className="text-5xl md:text-7xl font-heading font-black mb-6 tracking-tight">Core <br className="md:hidden" /> <span className="text-gradient-cyan glow-text">Capabilities.</span></h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl">Engineering world-class solutions that bridge the gap between high-level business strategy and cutting-edge technology.</p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <ServiceCard 
-            title="AI Automation" 
+          <ServiceCard
+            title="AI Automation"
             description="Intelligent chatbots, autonomous workflows, and neural CRM integrations. We make your business run 24/7."
             icon={<Bot size={32} />}
             delay={0.1}
           />
-          <ServiceCard 
-            title="Web Engineering" 
+          <ServiceCard
+            title="Web Engineering"
             description="Ultra-fast Next.js applications with 3D interactivity. We build the infrastructure for the next billion users."
             icon={<Code size={32} />}
             delay={0.2}
           />
-          <ServiceCard 
-            title="Brand Design" 
+          <ServiceCard
+            title="Brand Design"
             description="Visually magnetic identities and frictionless UI/UX. We craft the aesthetic standard of the industry."
             icon={<Paintbrush size={32} />}
             delay={0.3}
           />
         </div>
-        
+
         <div className="text-center mt-16 md:mt-24">
           <Link href="/services" className="inline-flex items-center gap-2 text-primary hover:text-white font-black text-xl transition-all group">
-            Explore Ecosystem 
+            Explore Ecosystem
             <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
